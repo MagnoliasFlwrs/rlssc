@@ -19,3 +19,36 @@ if (heroSwiper) {
         }
     });
 }
+
+const govermentSwiper = document.querySelector('.goverment-swiper');
+if (govermentSwiper) {
+    const swiperGov = new Swiper(govermentSwiper, {
+        slidesPerView: 1.1,
+        spaceBetween: 15,
+        loop: true,
+        navigation: {
+            nextEl: '.goverment-next',
+            prevEl: '.goverment-prev',
+        },
+        breakpoints: {
+            768: {
+              slidesPerView: 1.5,
+              spaceBetween: 15,
+            },
+            900: {
+                slidesPerView: 2.1,
+                spaceBetween: 20,
+              },
+
+            1100: {
+              slidesPerView: 2.5,
+              spaceBetween: 20,
+            },
+            1340: {
+              slidesPerView: 3.1,
+              spaceBetween: 30,
+            }
+          }
+    
+    });
+}
